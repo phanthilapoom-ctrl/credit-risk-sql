@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: credit-risk-db
+    environment:
+      POSTGRES_USER: analyst
+      POSTGRES_PASSWORD: practice_password
+      POSTGRES_DB: credit_risk
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

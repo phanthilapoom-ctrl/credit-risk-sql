@@ -1,0 +1,15 @@
+ count 
+-------
+     1
+(1 row)
+
+ loan_id | outstanding_balance 
+---------+---------------------
+ L005    |            -5000.00
+(1 row)
+
+ count 
+-------
+     6
+(1 row)
+
