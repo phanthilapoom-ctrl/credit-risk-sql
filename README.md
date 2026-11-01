@@ -33,13 +33,43 @@ This is synthetic practice data and does not represent real customers or bank re
 
 ## Project Structure
 ```text
+## Project Structure
+
+```text
 credit-risk-sql/
-├── sql/
-│   └── 01_data_quality_checks.sql
-├── data/
+├── dashboard/
+│   ├── customer_analysis.csv
+│   ├── portfolio_risk.csv
+│   └── risk_segmentation.csv
 ├── results/
-│   └── 01_data_quality_checks.txt
+│   ├── 01_data_quality_checks.txt
+│   ├── 02_loan_portfolio_summary.txt
+│   ├── 03_risk_classification.txt
+│   ├── 05_customer_loan_join.txt
+│   ├── 07_default_rate_analysis.txt
+│   ├── 08_risk_segmentation.txt
+│   ├── 09_portfolio_risk_analysis.txt
+│   └── 10_default_analysis.txt
+├── sql/
+│   ├── 01_data_quality_checks.sql
+│   ├── 02_loan_portfolio_summary.sql
+│   ├── 03_risk_classification.sql
+│   ├── 04_create_customers.sql
+│   ├── 05_customer_loan_join.sql
+│   ├── 06_customer_loan_analysis.sql
+│   ├── 07_default_rate_analysis.sql
+│   ├── 08_risk_segmentation.sql
+│   ├── 09_portfolio_risk_analysis.sql
+│   └── 10_default_analysis.sql
+├── compose.yaml
 └── README.md
+```
+
+### Folder Descriptions
+- `sql/` — SQL scripts for data quality checks, loan analysis, customer joins, risk segmentation, and default analysis.
+- `results/` — Query outputs generated from PostgreSQL.
+- `dashboard/` — CSV files exported for dashboard development.
+- `compose.yaml` — Docker Compose configuration for PostgreSQL.
 ```
 
 ## Current Findings
