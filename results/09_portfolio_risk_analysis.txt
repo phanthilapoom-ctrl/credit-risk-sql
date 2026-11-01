@@ -1,0 +1,8 @@
+  risk_level  | total_loans | total_loan_amount | total_outstanding_balance 
+--------------+-------------+-------------------+---------------------------
+ High Risk    |           2 |         330000.00 |                 260000.00
+ Medium Risk  |           1 |         200000.00 |                 150000.00
+ Low Risk     |           2 |         180000.00 |                  80000.00
+ Invalid Data |           1 |         120000.00 |                  -5000.00
+(4 rows)
+

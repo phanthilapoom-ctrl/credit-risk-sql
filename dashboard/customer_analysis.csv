@@ -1,0 +1,5 @@
+customer_id,customer_name,customer_segment,total_loans,total_loan_amount,total_outstanding_balance,default_loans
+C001,Alice,Retail,2,300000.00,230000.00,0
+C003,Charlie,Premium,1,120000.00,-5000.00,0
+C002,Bob,Retail,2,230000.00,120000.00,1
+C004,David,Premium,1,180000.00,140000.00,1

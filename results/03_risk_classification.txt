@@ -1,0 +1,10 @@
+ loan_id | outstanding_balance | days_past_due |  risk_level  
+---------+---------------------+---------------+--------------
+ L005    |            -5000.00 |            -3 | Invalid Data
+ L001    |            80000.00 |             0 | Current
+ L004    |                     |            10 | Low Risk
+ L002    |           150000.00 |            45 | Medium Risk
+ L006    |           140000.00 |            60 | Medium Risk
+ L003    |           120000.00 |           100 | High Risk
+(6 rows)
+

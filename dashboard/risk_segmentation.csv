@@ -1,0 +1,7 @@
+loan_id,customer_id,loan_amount,outstanding_balance,days_past_due,default_flag,risk_level
+L001,C001,100000.00,80000.00,0,0,Low Risk
+L002,C001,200000.00,150000.00,45,0,Medium Risk
+L003,C002,150000.00,120000.00,100,1,High Risk
+L004,C002,80000.00,,10,0,Low Risk
+L005,C003,120000.00,-5000.00,-3,0,Invalid Data
+L006,C004,180000.00,140000.00,60,1,High Risk

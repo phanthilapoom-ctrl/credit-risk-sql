@@ -1,0 +1,10 @@
+ loan_id | customer_name |   province   | customer_segment | loan_amount | outstanding_balance | days_past_due | default_flag 
+---------+---------------+--------------+------------------+-------------+---------------------+---------------+--------------
+ L001    | Alice         | Bangkok      | Retail           |   100000.00 |            80000.00 |             0 |            0
+ L002    | Alice         | Bangkok      | Retail           |   200000.00 |           150000.00 |            45 |            0
+ L003    | Bob           | Chiang Mai   | Retail           |   150000.00 |           120000.00 |           100 |            1
+ L004    | Bob           | Chiang Mai   | Retail           |    80000.00 |                     |            10 |            0
+ L005    | Charlie       | Pathum Thani | Premium          |   120000.00 |            -5000.00 |            -3 |            0
+ L006    | David         | Chonburi     | Premium          |   180000.00 |           140000.00 |            60 |            1
+(6 rows)
+

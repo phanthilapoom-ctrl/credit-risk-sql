@@ -1,0 +1,7 @@
+ risk_level  | total_loans | default_loans | default_rate_pct 
+-------------+-------------+---------------+------------------
+ High Risk   |           2 |             2 |           100.00
+ Medium Risk |           1 |             0 |             0.00
+ Low Risk    |           2 |             0 |             0.00
+(3 rows)
+
