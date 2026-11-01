@@ -2,35 +2,47 @@
 # Credit Risk Data Quality & Portfolio Analysis
 
 ## Overview
-This project uses SQL and PostgreSQL to examine loan data, identify data quality issues, and summarize loan portfolio information.
 
-The project is designed to demonstrate practical SQL skills relevant to entry-level Data Analyst and Credit Risk Analyst roles.
+This project uses SQL and PostgreSQL to examine loan data, identify data quality issues, and analyze loan portfolio information.
+
+The project demonstrates practical SQL skills relevant to entry-level Data Analyst and Credit Risk Analyst roles, including data quality checks, loan portfolio analysis, customer analysis, risk segmentation, and default analysis.
 
 ## Tools
+
 - PostgreSQL
 - SQL
 - Docker
+- Google Sheets
+- Google Looker Studio
 
 ## Dataset
-The current dataset contains six synthetic loan records created for SQL practice. It includes loan amounts, outstanding balances, days past due, and default indicators.
+
+The project uses six synthetic loan records created for SQL practice. The dataset includes loan amounts, outstanding balances, days past due, and default indicators.
+
+Customer information is also included to demonstrate SQL joins and customer-level analysis.
 
 This is synthetic practice data and does not represent real customers or bank records.
 
 ## Project Objectives
-- Identify missing values in loan records.
-- Detect negative outstanding balances.
-- Summarize the number of loan records.
-- Practice SQL queries for data quality checks.
+
+- Identify missing values and invalid records.
+- Detect negative outstanding balances and negative days past due.
+- Summarize loan portfolio information.
+- Combine customer and loan data using SQL joins.
+- Classify loans into different risk segments.
+- Analyze default rates and portfolio risk.
+- Present key findings through an interactive dashboard.
 
 ## SQL Skills Demonstrated
-- SELECT and WHERE
-- COUNT
-- NULL handling with IS NULL
-- Filtering records using comparison operators
 
-## Project Structure
-```text
-credit-risk-sql/
+- **Data Retrieval & Filtering:** SELECT, WHERE, ORDER BY
+- **Aggregate Functions:** COUNT, SUM
+- **Data Aggregation:** GROUP BY, HAVING
+- **Conditional Logic:** CASE WHEN for risk classification
+- **Data Joining:** LEFT JOIN to combine customer and loan data
+- **Data Quality Checks:** Identifying missing values (NULL), negative values, and invalid records
+- **Credit Risk Analysis:** Loan portfolio summaries, risk segmentation, and default analysis
+
 ## Project Structure
 
 ```text
@@ -39,6 +51,8 @@ credit-risk-sql/
 │   ├── customer_analysis.csv
 │   ├── portfolio_risk.csv
 │   └── risk_segmentation.csv
+├── images/
+│   └── credit-risk-dashboard.png
 ├── results/
 │   ├── 01_data_quality_checks.txt
 │   ├── 02_loan_portfolio_summary.txt
@@ -63,6 +77,14 @@ credit-risk-sql/
 └── README.md
 ```
 
+### Folder Descriptions
+
+- `sql/` — SQL scripts for data quality checks, loan analysis, customer joins, risk segmentation, and default analysis.
+- `results/` — Query outputs generated from PostgreSQL.
+- `dashboard/` — CSV files exported for dashboard development.
+- `images/` — Dashboard preview image.
+- `compose.yaml` — Docker Compose configuration for PostgreSQL.
+
 ## Dashboard
 
 The project includes an interactive dashboard developed using Google Looker Studio, with Google Sheets as the data source.
@@ -75,6 +97,7 @@ The dashboard presents key portfolio metrics and visualizations, including:
 - **Customer Analysis:** Loan portfolio details and default counts by customer.
 
 ### Dashboard Tools
+
 - Google Sheets
 - Google Looker Studio
 
@@ -82,17 +105,12 @@ The dashboard presents key portfolio metrics and visualizations, including:
 
 ![Credit Risk Portfolio Analysis Dashboard](images/credit-risk-dashboard.png)
 
-### Folder Descriptions
-- `sql/` — SQL scripts for data quality checks, loan analysis, customer joins, risk segmentation, and default analysis.
-- `results/` — Query outputs generated from PostgreSQL.
-- `dashboard/` — CSV files exported for dashboard development.
-- `compose.yaml` — Docker Compose configuration for PostgreSQL.
-```
-
 ## Current Findings
-- One loan record has a missing outstanding balance.
-- One loan record has a negative outstanding balance.
+
 - The dataset contains six loan records.
+- One loan record has a missing outstanding balance.
+- One loan record contains a negative outstanding balance and negative days past due.
+- The total outstanding balance is 485,000, including the invalid negative balance of -5,000.Excluding this invalid record, the total is 490,000.
 
 ## Business Insights
 
@@ -106,15 +124,19 @@ The Medium Risk segment contains 1 loan, with an outstanding balance of 150,000 
 
 ### 3. Data Quality Issues
 
-One loan record contains invalid values, including a negative outstanding balance of -5,000 and negative days past due. Data validation and investigation should be performed before using this record for portfolio reporting or credit-risk analysis.
-
+One loan record contains invalid values, including a negative outstanding balance of -5,000 and negative days past due. Data validation and investigation should be performed before using this record for portfolio reporting or credit risk analysis.
 
 ## Limitations
-The dataset is small and synthetic. The findings are for SQL practice only and should not be interpreted as real credit risk conclusions.
+
+- The dataset is small and synthetic.
+- The risk classification rules are simplified for demonstration purposes.
+- The findings should not be interpreted as real-world credit risk conclusions.
+- Invalid records may affect portfolio metrics and should be investigated before making business decisions.
 
 ## Future Improvements
-- Add more loan records.
-- Investigate data quality issues.
-- Analyze overdue loans and default rates.
-- Add SQL joins and common table expressions (CTEs).
-- Build a portfolio dashboard.
+
+- Expand the dataset to include more loan records.
+- Add more comprehensive data validation rules.
+- Explore advanced SQL techniques such as Common Table Expressions (CTEs) and window functions.
+- Develop additional credit risk indicators and portfolio monitoring metrics.
+- Improve dashboard interactivity and analytical insights.
