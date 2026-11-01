@@ -23,10 +23,13 @@ This is synthetic practice data and does not represent real customers or bank re
 - Practice SQL queries for data quality checks.
 
 ## SQL Skills Demonstrated
-- SELECT and WHERE
-- COUNT
-- NULL handling with IS NULL
-- Filtering records using comparison operators
+- Data Retrieval & Filtering: SELECT, WHERE, ORDER BY
+- Aggregate Functions: COUNT, SUM
+- Data Aggregation: GROUP BY, HAVING
+- Conditional Logic: CASE WHEN for risk classification
+- Data Joining: LEFT JOIN to combine customer and loan data
+- Data Quality Checks: Identifying missing values (NULL), negative values, and invalid records
+- Credit Risk Analysis: Loan portfolio summaries, risk segmentation, and default analysisors
 
 ## Project Structure
 ```text
