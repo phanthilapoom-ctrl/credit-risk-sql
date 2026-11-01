@@ -105,12 +105,13 @@ The dashboard presents key portfolio metrics and visualizations, including:
 
 ![Credit Risk Portfolio Analysis Dashboard](images/credit-risk-dashboard.png)
 
+
 ## Current Findings
 
 - The dataset contains six loan records.
 - One loan record has a missing outstanding balance.
 - One loan record contains a negative outstanding balance and negative days past due.
-- The total outstanding balance is 485,000, including the invalid negative balance of -5,000.Excluding this invalid record, the total is 490,000.
+- The total outstanding balance is 485,000, including the invalid negative balance of -5,000. Excluding this invalid record, the total is 490,000.
 
 ## Business Insights
 
